@@ -1,0 +1,70 @@
+body {
+  background: radial-gradient(
+      600px circle at 1112px 698px,
+      rgb(255, 0, 242) 50%,
+      transparent 50%
+    ),
+    radial-gradient(700px circle at 455px 354px, aqua 50%, transparent 50%),
+    radial-gradient(
+      500px circle at center center,
+      rgb(0, 255, 170) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      800px circle at 345px 466px,
+      rgb(255, 230, 0) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      200px circle at 967px 459px,
+      rgb(0, 183, 255) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      900px circle at 1012px 298px,
+      rgb(255, 0, 0) 50%,
+      transparent 50%
+    ),
+    rgb(50, 50, 50);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 500px;
+  margin: 0;
+  color: rgb(10, 10, 10);
+}
+h1 {
+  text-align: center;
+  text-shadow: rgb(240, 240, 240) 1px 1px, rgb(10, 10, 10) 2px 2px;
+  font-size: 3rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6px;
+  margin-left: 60px;
+}
+.pic-col {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 15px;
+}
+.pic-col img {
+  margin-top: 10px;
+  vertical-align: middle;
+  border: 3px solid black;
+}
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
